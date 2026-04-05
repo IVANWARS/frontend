@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style css">
+  <title>Портфолио фронтенд-разработчика</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="brand" aria-label="Бренд-фронтенд">
+      <span
+        style="display:inline-block;width:34px;height:34px;background:#1e2a32;border-radius:8px;box-shadow: inset 0 0 8px rgba(0,0,0,.4);"></span>
+      <strong>Frontend-by-You</strong>
+    </div>
+    <h1>Профиль фронтенд-разработчика начального уровня</h1>
+    <p class="sub">Я создаю понятные и адаптивные веб‑интерфейсы. Ниже — мои услуги и ориентировочная стоимость. Все
+      работы — под ключ, в разумные сроки, с чистым кодом и базовой оптимизацией.</p>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="services-title">
+      <h2 id="services-title" style="margin-bottom:8px;">Услуги</h2>
+      <div class="grid">
+        <!-- Услуга 1 -->
+        <article class="service" aria-label="Страница лендинга под ключ">
+          <h3>1) Лендинг-проект под ключ</h3>
+          <div class="price">от 12 000 ₽</div>
+          <ul class="features">
+            <li>Адаптивная верстка под мобильные устройства</li>
+            <li>Чистый HTML/CSS, семантика и доступность (A11y)</li>
+            <li>Базовая семантическая разметка и структура</li>
+            <li>Подключение шрифта и иконок, минимальная анимация</li>
+            <li>Форма обратной связи (безопасная отправка)</li>
+          </ul>
+        </article>
+
+        <!-- Услуга 2 -->
+        <article class="service" aria-label="Виджет/компонент UI">
+          <h3>2) Компонент UI или виджет</h3>
+          <div class="price">от 4 500 ₽</div>
+          <ul class="features">
+            <li>Переиспользуемый HTML/CSS блок</li>
+            <li>Пояснения по доступности и клавиатурной навигации</li>
+            <li>Анимации на CSS: hover и focus</li>
+            <li>Документация по интеграции в проект</li>
+          </ul>
+        </article>
+
+        <!-- Услуга 3 -->
+        <article class="service" aria-label="Верстка страниц по макету">
+          <h3>3) Верстка по макету (PSD/Figma)</h3>
+          <div class="price">от 6 000 ₽</div>
+          <ul class="features">
+            <li>Перенос дизайна в код с соблюдением шагов стилей</li>
+            <li>Семантика, семантические теги и структуры</li>
+            <li>Опционально: настройка сетки и адаптивности</li>
+          </ul>
+        </article>
+
+        <!-- Услуга 4 -->
+        <article class="service" aria-label="Оптимизация скорости и доступности">
+          <h3>4) Базовая оптимизация и доступность</h3>
+          <div class="price">от 3 000 ₽</div>
+          <ul class="features">
+            <li>Оптимизация CSS: удаление ненужного и минимизация</li>
+            <li>Проверки на доступность (ARIA-lite)</li>
+            <li>Минимизация кода без потери читаемости</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title" style="margin-bottom:8px;">Примеры работ</h2>
+      <p style="color:var(--muted); margin-top:0;">
+        Ниже представлены примеры моего подхода к верстке и стилям. Контент вымышленный и служит демонстрацией
+        структуры.
+      </p>
+
+      <div class="grid" style="gap:16px;">
+        <div class="service" aria-label="Пример лендинга">
+          <h3>Лендинг «Tech Start»</h3>
+          <p style="margin:0 0 8px; color:var(--muted);">Одностраничный лендинг с адаптивной версткой и CTA</p>
+          <div class="price" style="font-size:18px; color:#b8fff0;">HTML/CSS: готово</div>
+          <pre><code><!-- Пример структуры -->
+&lt;header&gt;
+  &lt;h1&gt;Tech Start&lt;/h1&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+
+        <div class="service" aria-label="Пример UI-компонента">
+          <h3>Кнопка CTA — модуль</h3>
+          <p style="margin:0 0 8px; color:var(--muted);">Кнопка с фокус-стейтом и адаптивной подложкой</p>
+          <div class="price" style="font-size:18px; color:#e6ffe6;">HTML / CSS</div>
+          <pre><code>.btn {
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #1e90ff;
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="margin-bottom:8px;">Связаться</h2>
+      <p style="color:var(--muted);">Готов обсудить ваш проект, сроки и бюджет. Предложу четкий план и оценку времени.
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a class="cta" href="#" aria-label="Связаться по форме" style="text-decoration:none;">Связаться</a>
+        <span style="align-self:center; color:var(--muted);">или отправить письмо на</span>
+        <code style="align-self:center;">hello@example.dev</code>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    © 2026 Frontend-by-You — Все изображения условны. Стоимость может корректироваться под требования проекта.
+  </footer>
+</body>
+
+</html>
